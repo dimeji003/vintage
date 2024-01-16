@@ -22,4 +22,5 @@ export const EmblaCarousel = () => {
     </div>
   )
 }
+export default EmblaCarousel;
 
