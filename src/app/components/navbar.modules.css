@@ -1,0 +1,24 @@
+@media screen and (min-width: 769px){
+    
+
+}
+@media screen and (max-width: 768px){
+    .sidebar{
+        position: absolute;
+        height: 100vh;
+        left: 0;
+        
+    
+    }
+
+}
+@media screen and (max-width: 480px){
+    .sidebar{
+        position: absolute;
+        height: 100vh;
+        left: 0;
+        
+    
+    }
+
+}

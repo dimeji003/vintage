@@ -1,0 +1,5 @@
+.blogcover{
+    background-image: url(/blogcover.jpg);
+    background-size: cover;
+    height: 80vh;
+  }
