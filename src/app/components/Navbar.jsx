@@ -6,7 +6,7 @@ import { MdOutlineCollectionsBookmark } from "react-icons/md";
 import { IoMdCall } from "react-icons/io";
 import { MdOutlineShoppingCart } from "react-icons/md";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { FaSearchengin } from "react-icons/fa6";
+
 import styles from './navbar.modules.css'
 import Link from 'next/link';
 import Image from 'next/image';
