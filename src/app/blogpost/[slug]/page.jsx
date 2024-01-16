@@ -11,7 +11,7 @@ import { RiInstagramFill } from "react-icons/ri";
 export default function page(props) {
     const blogInfo = blogPosts.find(blog => blog.subject.split(' ').join('-') == props.params.slug)
     const recentPosts = blogPosts.slice(3, 6).map(blog => (
-        <section className='flex flex-row gap-5'>
+        <section key={blog.id} className='flex flex-row gap-5'>
             <Image src={`/${blog.image}.jpg`} width={100} height={100} />
             <div className='flex flex-col justify-between'>
             <span className='flex flex-row items-center text-sm text-gray-600 gap-2'><IoCalendarOutline /> <em>{blog.date}</em></span>

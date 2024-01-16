@@ -11,7 +11,7 @@ export default function page(props) {
     const related = myProducts.filter(cloth => cloth.type == productInfo.type && cloth.title !== productInfo.title )
 
     const relatedProducts = related.map(cloth => (
-        <section className='shadow-xl '>
+        <section key={cloth.id} className='shadow-xl '>
             <Link href={`/products/${cloth.title.split(' ').join('-')}`}>
             <Image src={`/images/${cloth.image}.jpg`} alt={cloth.title} width={200} height={200}/>
             <h2 className='text-center pt-2'>{cloth.title}</h2>
