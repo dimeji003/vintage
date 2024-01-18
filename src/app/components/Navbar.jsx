@@ -27,23 +27,23 @@ export default function Navbar() {
   return (
     <div>
 
-    <nav className='flex flex-row bg-white  md:text-center sm:h-20 h-12 items-center md:mt-0 md:px-6'>
-      <div>
-      <SiRevanced className='text-5xl items-center text-red-600 pl-5'/>
+    <nav className='flex flex-row md:bg-white bg-transparent md:text-center sm:h-20 h-16 gap-[20px] items-center md:mt-0 md:justify-center justify-between'>
+      <div className='flex flex-row md:w-[50%] w-[60%] items-center'>
+      <SiRevanced className='md:text-5xl text-3xl items-center md:text-red-600 text-red-600 pl-2 md:pl-5'/><p className='md:text-2xl md:text-red-600 '>intage Vanguard</p>
 
       </div>
 
+      <div className='flex flex-row items-center pr-2 '>
 
-    
-      <div className='md:pl-20'>
+      <div className=''>
 
-        <ul className={`md:flex md:flex-row flex-col md:pl-14 md:items-center text-black md:text-red-600 sm:gap-7 md:gap-12 gap-2 text-xs md:justify-center ${showNav ? "flex" : "hidden"}  md:pt-0 bg-white z-50 md:h-10 fixed left-0 top-0 md:relative w-[60%] h-[100vh] pt-6 ${styles.sidebar}`} >
-          <div className='md:flex md:flex-row md:pl-64 md:gap-11 gap-12 '>
+        <ul className={`md:flex md:flex-row flex-col md:items-center text-black md:text-red-600 sm:gap-7 md:gap-12 gap-2 text-xs md:justify-center ${showNav ? "flex" : "hidden"}  md:pt-0 bg-white z-50 md:h-10 fixed left-0 top-0 md:relative w-[60%] h-[100vh] pt-6 ${styles.sidebar}`} >
+          <div className='md:flex md:flex-row  md:gap-11 gap-12 '>
             <div className='border-b border-black h-12'>
 
             <MdCancel className='md:hidden items-center text-5xl xl pl-4 cursor-pointer ' onClick={onclick}/>
             </div>
-            <div className='md:flex md:flex-row md:justify-center md:gap-14'>
+            <div className='md:flex md:flex-row md:justify-center md:gap-10'>
 
            <Link href='/' className='focus:border-b-2 focus:border-red-600'>
             <li className='flex sm:gap-3 gap-2 items-center hover:cursor-pointer md:h-20 h-12 hover:border-b-2 border-b-red-600 pl-4 md:pl-0'>
@@ -85,7 +85,7 @@ export default function Navbar() {
       
 
         
-        <ul className='flex flex-row items-center gap-1 text-2xl rounded-full md:pl-20 pl-[250px]'>
+        <ul className='flex flex-row items-center gap-2 text-2xl rounded-full'>
         <li className='flex items-center hover:cursor-pointer h-20'>
         <IoIosSearch className='text-2xl text-red-600'/>
 
@@ -100,6 +100,10 @@ export default function Navbar() {
         <GiHamburgerMenu className='md:hidden block text-red-600 cursor-pointer'  onClick={onclick} />  
         </ul>
       
+      </div>
+
+
+    
 
         
 
