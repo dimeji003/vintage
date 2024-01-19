@@ -32,7 +32,7 @@ export default function Navbar() {
   return (
     <div>
 
-    <nav className='flex flex-row bg-white md:text-center sm:h-20 h-20 gap-[20px] items-center md:mt-0 justify-between w-[100%] px-6'>
+    <nav className='flex flex-row bg-white md:text-center sm:h-20 h-16 gap-[20px] items-center md:mt-0 justify-between w-[100%] px-6'>
       <div className='flex flex-row md:w-[50%] w-[60%] items-center'>
       <SiRevanced className='md:text-5xl text-4xl items-center md:text-red-600 text-red-600 pl-2 md:pl-5'/>
 
