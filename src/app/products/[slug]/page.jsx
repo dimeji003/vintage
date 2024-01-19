@@ -6,13 +6,10 @@ import React from 'react'
 import Image from 'next/image'
 import { myProducts } from '@/app/components/Shop'
 import { FaArrowLeftLong } from "react-icons/fa6";
-import { useRouter } from 'next/router'
+
 
 export default function page(props) {
-    const router = useRouter()
-    function goBack(){
-        router.back();
-    }
+    
     const productInfo = myProducts.find(cloth => cloth.title.split(' ').join('-') == props.params.slug)
     const related = myProducts.filter(cloth => cloth.type == productInfo.type && cloth.title !== productInfo.title )
 
@@ -27,7 +24,7 @@ export default function page(props) {
     ))
   return (
     <div>
-        <FaArrowLeftLong onClick={goBack} className='absolute left-9 top-20 text-red-600 text-3xl cursor-pointer'/>
+        <FaArrowLeftLong className='absolute left-9 top-20 text-red-600 text-3xl cursor-pointer'/>
         
      <div className='  md:w-[90%] w-[90%] m-auto place-content-center md:pt-3 pt-10'>
 
