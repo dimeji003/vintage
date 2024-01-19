@@ -12,8 +12,8 @@ export const EmblaCarousel = () => {
   return (
     <div className={`embla ${styles.embla}`} ref={emblaRef}>
       <div className={`embla__container ${styles.embla__container}`}>
-        <div className={`embla__slide  ${styles.slide1}`}> <div className='pl-7'><h2 className='md:pt-44 pt-80 md:w-[50%] w-[60%]'><SlidingUpText/></h2>
-        <p><SlidingUpTextTwo/></p>
+        <div className={`embla__slide  ${styles.slide1}`}> <div className='pl-7'><h2 className='md:pt-44 pt-96 md:w-[50%] w-[60%]'><SlidingUpText/></h2>
+        <p className='w-[80%]'><SlidingUpTextTwo/></p>
         <p><SlidingUpTextThree/></p>
           </div> </div>
         <div className= {`embla__slide ${styles.slide2}`}>Slide 2</div>

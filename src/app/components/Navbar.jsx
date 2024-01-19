@@ -14,6 +14,7 @@ import { SiRevanced } from "react-icons/si";
 import { IoIosSearch } from "react-icons/io";
 import { FaPerson } from "react-icons/fa6";
 import { MdCancel } from "react-icons/md";
+import SearchBar from './SearchBar';
 
 export default function Navbar() {
   const [showNav, setShowNav] = useState(false)
@@ -21,15 +22,19 @@ export default function Navbar() {
   function onclick(){
     setShowNav (!showNav)
   }
+  const [showSearch, setShowSearch] = useState(false)
+  function openSearch(){
+    setShowSearch (!showSearch)
+  }
 
   
   
   return (
     <div>
 
-    <nav className='flex flex-row md:bg-white bg-transparent md:text-center sm:h-20 h-16 gap-[20px] items-center md:mt-0 md:justify-center justify-between'>
+    <nav className='flex flex-row bg-white md:text-center sm:h-20 h-20 gap-[20px] items-center md:mt-0 justify-between w-[100%] px-6'>
       <div className='flex flex-row md:w-[50%] w-[60%] items-center'>
-      <SiRevanced className='md:text-5xl text-3xl items-center md:text-red-600 text-red-600 pl-2 md:pl-5'/><p className='md:text-2xl md:text-red-600 '>intage Vanguard</p>
+      <SiRevanced className='md:text-5xl text-4xl items-center md:text-red-600 text-red-600 pl-2 md:pl-5'/>
 
       </div>
 
@@ -37,7 +42,7 @@ export default function Navbar() {
 
       <div className=''>
 
-        <ul className={`md:flex md:flex-row flex-col md:items-center text-black md:text-red-600 sm:gap-7 md:gap-12 gap-2 text-xs md:justify-center ${showNav ? "flex" : "hidden"}  md:pt-0 bg-white z-50 md:h-10 fixed left-0 top-0 md:relative w-[60%] h-[100vh] pt-6 ${styles.sidebar}`} >
+        <ul className={`md:flex md:flex-row flex-col md:items-center text-black  md:text-red-600 sm:gap-7 md:gap-12 gap-2 text-xs md:justify-center ${showNav ? "flex" : "hidden"}  md:pt-0 bg-white z-50 md:h-10 fixed left-0 top-0 md:relative md:[70%] w-[60%] h-[100vh] pt-6 ${styles.sidebar}`} >
           <div className='md:flex md:flex-row  md:gap-11 gap-12 '>
             <div className='border-b border-black h-12'>
 
@@ -83,11 +88,13 @@ export default function Navbar() {
             
       </div>
       
+      </div>
 
-        
+        <div>
+
         <ul className='flex flex-row items-center gap-2 text-2xl rounded-full'>
         <li className='flex items-center hover:cursor-pointer h-20'>
-        <IoIosSearch className='text-2xl text-red-600'/>
+        <IoIosSearch onClick={openSearch} className='text-2xl text-red-600' />
 
         </li>
         
@@ -96,11 +103,12 @@ export default function Navbar() {
        
 
           </li>
+        
 
         <GiHamburgerMenu className='md:hidden block text-red-600 cursor-pointer'  onClick={onclick} />  
         </ul>
+        </div>
       
-      </div>
 
 
     
@@ -111,6 +119,10 @@ export default function Navbar() {
 
 
     </nav>
+    <div className={`${showSearch ? "flex" : "hidden"} w-[100%]`}> 
+    <SearchBar />
+
+    </div>
    
       
     

@@ -24,7 +24,7 @@ export default function page(props) {
         </section>
     ))
   return (
-    <div className='w-[85%] m-auto'>
+    <div className='w-[85%] m-auto pt-11'>
         <div className='flex flex-row gap-16 '>
             <div className='flex flex-col  md:w-[55%] w-[90%] m-auto '>
                 <div className='border-b border-gray-400 pb-11'>

@@ -25,7 +25,7 @@ export default function Dailydeals() {
     ))
   return (
     <div className='w-4/5 m-auto mt-28'>
-        <div className='flex flex-row justify-between'>
+        <div className='flex flex-row w-[100%] justify-between'>
             <div className='md:text-4xl text-2xl '>Daily Deals</div>
             <div className='flex items-center'>
                 <Link href='/catalog' className='relative w-40 text-right flex items-center'>

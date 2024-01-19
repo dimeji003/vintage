@@ -5,7 +5,8 @@ import Link from 'next/link';
 
 export default function Video() {
   return (
-   <div className={`mt-32 ${styles.video}`}>
+   <div className={`md:mt-32 mt-8 ${styles.video}`}>
+
     <div className='md:w-[35%] w-[70%] pt-24 pl-8'>
 
     <h2 className='md:text-4xl text-3xl text-white'>We believe in the power of shoes.</h2>

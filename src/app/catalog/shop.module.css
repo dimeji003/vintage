@@ -1,6 +1,20 @@
-.shop{
-    height: 90vh;
-    background-image:radial-gradient(rgba(15, 7, 7, 0.27), rgba(17, 6, 6, 0.986)), url(/shop11.jpg);
-    background-size: cover;
 
+@media screen and (max-width:480px){
+    .shop{
+        height: 90vh;
+        background-image:radial-gradient(rgba(15, 7, 7, 0.27), rgba(17, 6, 6, 0.986)), url(/blogpost6.jpg);
+        background-size: contain;
+
+    
+    }
+    
+}
+@media screen and (min-width:821px){
+    .shop{
+        height: 90vh;
+        background-image:radial-gradient(rgba(15, 7, 7, 0.27), rgba(17, 6, 6, 0.986)), url(/shop11.jpg);
+        background-size: cover;
+    
+    }
+    
 }

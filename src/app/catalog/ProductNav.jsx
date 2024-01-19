@@ -1,35 +1,47 @@
-import React from 'react'
+"use client"
+import React, { useState } from 'react'
+import { RiArrowDropDownLine } from "react-icons/ri";
 import Link from 'next/link'
 import styles from './nav.module.css'
 
-export default function ProductNav() {
-  return (
-    <nav className='flex flex-row text-center md:text-sm text-xs '>
-        <ul className={`flex flex-row md:gap-3 sm:gap-3 gap-1 pl-8 text-red-700 bg-transparent`}>
-            <Link href={`/catalog`}>
-            <li className='px-2 '>All</li>
 
+export default function ProductNav() {
+  const [IsOpen, setIsOpen] = useState(false)
+  function productNav(){
+
+    setIsOpen(!IsOpen)
+  }
+  return (
+    <div >
+      <button onClick={productNav} className='border flex flex-row border-gray-300 md:w-[200px] w-[120px] p-2 items-center text-center justify-between md:justify-center m-auto'><div>Category</div><div><RiArrowDropDownLine /></div></button>
+      {IsOpen && (
+        <div className='bg-white border absolute md:left-[412px] z-20 border-gray-300 md:w-[200px] w-[120px]'>
+          <div className='flex flex-col items-center'>
+            <Link href={'/catalog'} className='w-[100%]'>
+            <p className='text-red-600 border-b text-center border-b-gray-300 w-[100%] py-2'>All</p>
             </Link>
-            <Link href='/catalog/men'>
-            <li className='px-2 md:px-4'>Men</li>
+            <Link href={'/catalog/men'} className='w-[100%]'>
+            <p className='text-red-600 border-b text-center border-b-gray-300 w-[100%] py-2'>Men</p>
             </Link>
-            <Link href='/catalog/women'>
-            <li className='px-2 md:px-4'>Women</li>
+            <Link href={'/catalog/women'} className='w-[100%]'>
+            <p className='text-red-600 border-b text-center border-b-gray-300 w-[100%] py-2'>Women</p>
             </Link>
-            <Link href='/catalog/tees'>
-            <li className='px-2 md:px-4'>Tees</li>
+            <Link href={'/catalog/tees'} className='w-[100%]'>
+            <p className='text-red-600 border-b text-center border-b-gray-300 w-[100%] py-2'>Tees</p>
             </Link>
-            <Link href='/catalog/hoodies'>
-            <li className='px-2 md:px-4'>Hoodies</li>
+            <Link className='w-[100%]' href={'/catalog/hoodies'}>
+            <p className='text-red-600 border-b text-center border-b-gray-300 w-[100%] py-2'>Hoodies</p>
             </Link>
-            <Link href='/catalog/dresses'>
-            <li className='px-2 md:px-4'>Dresses</li>
+            <Link href={'/catalog/pants'} className='w-[100%]'>
+            <p className='text-red-600 border-b text-center border-b-gray-300 w-[100%] py-2'>Pants</p>
             </Link>
-            <Link href='/catalog/pants'>
-            <li className='px-2 md:px-4'>Pants</li>
+            <Link href={'/catalog/dresses'} className='w-[100%]'>
+            <p className='text-red-600 border-b text-center border-b-gray-300 w-[100%] py-2'>Dresses</p>
             </Link>
-        </ul>
-    </nav>
+          </div>
+        </div>
+      )}
+
+    </div>
   )
 }
- 
