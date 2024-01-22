@@ -55,6 +55,16 @@
   flex: 0 0 100%;
   min-width: 0;
 }
+.section{
+  position: relative;
+  bottom: -50px;
+  opacity: 0;
+  transition: opacity 3s, transform 1s;
+}
+.visible{
+  opacity: 1;
+  transform: translateY(-30px);
+}
     
     
 }
@@ -120,6 +130,16 @@
       background-size: cover;
       height: 80vh;
     }
+    .section{
+      position: relative;
+      bottom: -50px;
+      opacity: 0;
+      transition: opacity 3s, transform 1s;
+    }
+    .visible{
+      opacity: 1;
+      transform: translateY(-30px);
+    }
     
 }
   
@@ -180,6 +200,16 @@
           width: 100%;
           flex: 0 0 100%;
           min-width: 0;
+        }
+        .section{
+          position: relative;
+          bottom: -50px;
+          opacity: 0;
+          transition: opacity 3s, transform 1s;
+        }
+        .visible{
+          opacity: 1;
+          transform: translateY(-30px);
         }
           
 }

@@ -11,7 +11,7 @@ const SlidingUpTextTwo = () => {
 
 return (
 <div>
-    <p id='slidingUpTextTwo' className='text-white pb-5 text-base md:text-xl transform translate-y-8 opacity-0 transition-all duration-500 delay-500 ease-in'>{`Celebrating Style, Embracing Elegance: Where Fashion Becomes a Statement.`}
+    <p id='slidingUpTextTwo' className='text-white pb-5 md:w-[40%] text-base md:text-xl transform translate-y-8 opacity-0 transition-all duration-500 delay-500 ease-in'>{`Celebrating Style, Embracing Elegance: Where Fashion Becomes a Statement.`}
 
 
 

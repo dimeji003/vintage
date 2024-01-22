@@ -16,7 +16,7 @@ import Link from "next/link"
   return (
     <div>
       <Link href='/catalog'>
-       <button id='slidingUpTextThree' className="bg-red-600 text-white p-4 h-11 flex items-center rounded-xl">SHOP NOW</button>
+       <button id='slidingUpTextThree' className="bg-red-600 text-white p-4 h-12 flex items-center rounded-xl">SHOP NOW</button>
       </Link>
     </div>
   )
