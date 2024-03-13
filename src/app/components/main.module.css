@@ -177,7 +177,7 @@
           
         }
         .slide1{
-          background-image: radial-gradient(rgba(15, 7, 7, 0.4), rgba(17, 6, 6, 0.146)), url(/embla2.jpg);
+          background-image: radial-gradient(rgba(15, 7, 7, 0.6), rgba(17, 6, 6, 0.66)), url(/embla2.jpg);
           background-size: cover;
           height: 100vh;
           width: 100%;
@@ -185,7 +185,7 @@
           min-width: 0;
         }
         .slide2{
-          background-image: url(/streetwear.webp);
+          background-image: radial-gradient(rgba(15, 7, 7, 0.6), rgba(17, 6, 6, 0.66)),url(/streetwear.webp);
           background-size: cover;
           
           height: 100vh;

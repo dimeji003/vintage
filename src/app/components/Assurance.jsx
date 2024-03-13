@@ -5,7 +5,7 @@ import { AiOutlineSafety } from "react-icons/ai";
 
 export default function Assurance() {
   return (
-    <div className='flex md:flex-row flex-col md:w-4/5  m-auto gap-2 mt-14 md:py-16'>
+    <div className='flex md:flex-row flex-col lg:w-[65%]  m-auto gap-2 mt-14 md:py-16'>
         <div className='flex flex-col text-center place-content-center items-center px-7'>
         <IoMdGlobe className='md:text-6xl text-3xl text-center'/>
 

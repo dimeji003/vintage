@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 export default function Footer() {
   return (
-    <div  className='h-[70vh] bg-gray-100 relative w-[100%] top-56'>
+    <div  className='h-[70vh] bg-gray-100 relative w-[100%] '>
         <div className='flex md:flex-row flex-col w-[90%] m-auto md:gap-14 md:pt-32 py-20 gap-4'>
             <section className='flex flex-col  gap-3'>
                 <span className='inline-flex flex-row'><span className='pt-3 font-bold text-3xl'>Vintage Vanguard</span></span>
