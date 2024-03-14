@@ -2,10 +2,10 @@
 import React, { useState } from 'react'
 import { RiArrowDropDownLine } from "react-icons/ri";
 import Link from 'next/link'
-import styles from './nav.module.css'
 
 
-export default function ProductNav() {
+
+export default function ProductNav2() {
   const [IsOpen, setIsOpen] = useState(false)
   function productNav(){
 
@@ -15,7 +15,7 @@ export default function ProductNav() {
     <div >
       <button onClick={productNav} className='border flex flex-row border-gray-300 md:w-[200px] w-[120px] p-2 items-center text-center justify-between md:justify-center m-auto flex-wrap'><div>Category</div><div><RiArrowDropDownLine /></div></button>
       {IsOpen && (
-        <div className='bg-white border z-20 border-gray-300 md:w-[200px] w-[120px]'>
+        <div className='bg-white border z-20 w-[120px] md:w-[200px] m-auto'>
           <div className='flex flex-col items-center'>
             <Link href={'/catalog'} className='w-[100%]'>
             <p className='text-red-600 border-b text-center border-b-gray-300 w-[100%] py-2'>All</p>

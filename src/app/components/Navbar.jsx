@@ -36,7 +36,7 @@ export default function Navbar() {
   return (
     <div>
 
-    <nav className='flex flex-row bg-white md:text-center sm:h-20 h-16 gap-[20px] items-center md:mt-0 justify-between w-[100%] px-6'>
+    <nav className='flex flex-row bg-white md:text-center sm:h-20 h-16 gap-[20px] items-center md:mt-0 justify-between w-[100%] border-b-4 border-red-600 px-6'>
       <div className='flex flex-row md:w-[50%] w-[60%] items-center'>
       <SiRevanced className='md:text-5xl text-4xl items-center md:text-red-600 text-red-600 pl-2 md:pl-5'/>
 
@@ -46,40 +46,40 @@ export default function Navbar() {
 
       <div className=''>
 
-        <ul className={`md:flex md:flex-row flex-col md:items-center text-black  md:text-red-600 sm:gap-7 md:gap-12 gap-2 text-xs md:justify-center transition-transform transform ease-in-out duration-500 ${showNav ? "translate-x-0" : "-translate-x-full md:translate-x-0"}  md:pt-0 bg-white z-50 md:h-10 fixed left-0 top-0 md:relative md:[70%] w-[60%] h-[100vh] pt-6 ${styles.sidebar}`} >
-          <div className='md:flex md:flex-row  md:gap-11 gap-12 '>
+        <ul className={`flex lg:flex-row flex-col lg:items-center text-black  lg:text-red-600 sm:gap-7 lg:gap-12 gap-2 text-xs lg:justify-center transition-transform transform ease-in-out duration-500 ${showNav ? "translate-x-0" : "-translate-x-full lg:translate-x-0"}  md:pt-0 bg-white z-50 lg:h-10 fixed left-0 top-0 lg:relative lg:[70%] w-[60%] h-[100vh] pt-6 ${styles.sidebar}`} >
+          <div className='flex lg:flex-row flex-col  lg:gap-11 gap-12 '>
             <div className='border-b border-black h-12'>
 
-            <MdCancel className='md:hidden items-center text-5xl xl pl-4 cursor-pointer ' onClick={onclick}/>
+            <MdCancel className='lg:hidden items-center text-5xl xl pl-4 cursor-pointer ' onClick={onclick}/>
             </div>
-            <div className='md:flex md:flex-row md:justify-center md:gap-10'>
+            <div className='flex lg:flex-row flex-col  lg:justify-center lg:gap-10'>
 
            <Link href='/' className='focus:border-b-2 focus:border-red-600' onClick={leaveNav}>
-            <li className='flex sm:gap-3 gap-2 items-center hover:cursor-pointer md:h-20 h-12 hover:border-b-2 border-b-red-600 pl-4 md:pl-0'>
+            <li className='flex sm:gap-3 gap-2 items-center hover:cursor-pointer lg:h-20 h-12 hover:border-b-2 border-b-red-600 pl-4 lg:pl-0'>
             <IoHome />
                 <span className='text-black'>HOME</span>
                 </li>
            </Link>
           <Link href='/catalog' className='focus:border-b-2 focus:border-red-600 ' onClick={leaveNav}>
-            <li className='flex sm:gap-3 gap-2 items-center  hover:cursor-pointer md:h-20 h-12 md:pl-0 pl-4 hover:border-b-2 border-b-red-600'>
+            <li className='flex sm:gap-3 gap-2 items-center  hover:cursor-pointer lg:h-20 h-12 lg:pl-0 pl-4 hover:border-b-2 border-b-red-600'>
             <FiShoppingCart />
                 <span  className='text-black'>SHOP</span>
                 </li>
           </Link>
           <Link href='/blog' onClick={leaveNav}>
-            <li className='flex gap-3 items-center  hover:cursor-pointer md:h-20 h-12 hover:border-b-2 border-b-red-600 md:pl-0 pl-4'>
+            <li className='flex gap-3 items-center  hover:cursor-pointer lg:h-20 h-12 hover:border-b-2 border-b-red-600 lg:pl-0 pl-4'>
             <MdOutlineCollectionsBookmark />
                 <span className='text-black'>BLOG</span>
                 </li>
           </Link>
             <Link href='/contact' className='focus:border-b-2 focus:border-red-600' onClick={leaveNav}>
-            <li className='flex gap-3 items-center  hover:border-b-2 border-b-red-600 hover:cursor-pointer h-12 md:h-20 md:pl-0 pl-4'>
+            <li className='flex gap-3 items-center  hover:border-b-2 border-b-red-600 hover:cursor-pointer h-12 lg:h-20 lg:pl-0 pl-4'>
             <IoMdCall />
                 <span className='text-black'>CONTACT</span>
                 </li>
             </Link>    
             <Link href='/about' className='focus:border-b-2 focus:border-red-600' onClick={leaveNav}>
-             <li className='flex gap-3 items-center  hover:border-b-2 border-b-red-600 hover:cursor-pointer h-12 md:h-20 md:pl-0 pl-4'>
+             <li className='flex gap-3 items-center  hover:border-b-2 border-b-red-600 hover:cursor-pointer h-12 lg:h-20 lg:pl-0 pl-4'>
               <FaPerson />
                 <span className='text-black'>ABOUT</span>
                 </li>
@@ -109,7 +109,7 @@ export default function Navbar() {
           </li>
         
 
-        <GiHamburgerMenu className='md:hidden block text-red-600 cursor-pointer'  onClick={onclick} />  
+        <GiHamburgerMenu className='lg:hidden block text-red-600 cursor-pointer'  onClick={onclick} />  
         </ul>
         </div>
       

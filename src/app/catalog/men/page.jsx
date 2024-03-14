@@ -4,6 +4,7 @@ import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import ProductNav from '../ProductNav'
+import ProductNav2 from '@/app/components/ProductNav2'
 
 
 const men = myProducts.filter(cloth => cloth.gender == 'men')
@@ -25,7 +26,7 @@ const menCloth= men.map(cloth => (
 export default function page() {
   return (
     <div>
-        <ProductNav />
+        <ProductNav2 />
     <div className='grid md:grid-cols-3 grid-cols-2 gap-[50px] w-4/5 m-auto mt-10'>
         {menCloth}
         </div>

@@ -70,7 +70,7 @@ const blogSection = blogPosts.map(blog => (
     <div className='flex flex-row justify-between mt-6 text-sm text-gray-500'><p><em>{blog.userName}</em></p> <p><em className='flex flex-row gap-1 items-center'><IoCalendarOutline /> {blog.date}</em></p></div>
     <h2 className='mt-6 text-xl hover:text-red-600'>{blog.subject}</h2>
     <p className='mt-3 text-sm'>{blog.description}</p>
-    <p className='mt-6 text-sm hover:text-red-600'>Read More</p>
+    <p className='mt-6 text-sm text-red-600 hover:text-red-600'>Read More</p>
     </Link>
     
 
@@ -88,7 +88,7 @@ export default function page() {
         <p className='pt-5 pl-16'><Link href='/'><span>Home</span></Link> - <span>Blog</span> </p>
 
       </div>
-      <div className='grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-11 w-[85%] m-auto mt-24'>
+      <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-11 w-[85%] m-auto py-24'>
       {blogSection}
 
       </div>

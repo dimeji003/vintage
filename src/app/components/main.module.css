@@ -1,4 +1,4 @@
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .firstgrid{
     background-image:radial-gradient(rgba(15, 7, 7, 0.2), rgba(17, 6, 6, 0.536)), url(/menbackk.jpg);
     background-size: cover;
@@ -18,7 +18,7 @@
 .video{
   background-image: url(/video333.jpg);
   background-size: cover;
-  height: 80vh;
+  height: 50vh;
 }
 .embla {
   overflow: hidden;
@@ -68,7 +68,7 @@
     
     
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1025px) {
   .embla {
     overflow: hidden;
   }

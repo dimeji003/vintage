@@ -29,7 +29,7 @@ export default function Newarrivals() {
         <div className='text-center'>
             <h2 className='text-xs text-red-600'>ONLY THE BEST</h2>
             <h1 className='text-5xl pt-5'>NEW ARRIVALS</h1>
-            <div className='grid md:grid-cols-4 sm:grid-cols-2 gap-5 grid-cols-2 mt-6'> 
+            <div className='grid lg:grid-cols-4 md:grid-cols-3 gap-5 grid-cols-2 mt-6'> 
                 {newArrivals}
             </div>
         </div>

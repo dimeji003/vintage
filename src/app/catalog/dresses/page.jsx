@@ -4,6 +4,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { myProducts } from '@/app/components/Shop'
 import ProductNav from '../ProductNav'
+import ProductNav2 from '@/app/components/ProductNav2'
 
 const dresses = myProducts.filter(cloth => cloth.type == 'dresses')
 
@@ -22,7 +23,7 @@ const dressGrp = dresses.map(cloth => (
 export default function page() {
   return (
     <div>
-      <ProductNav />
+      <ProductNav2/>
       <div className='grid md:grid-cols-3 grid-cols-2 gap-[50px] w-4/5 m-auto mt-10'>
       {dressGrp}
 

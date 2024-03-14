@@ -11,13 +11,13 @@ export default function Contact() {
         <div className={styles.contactcover}>
 
         </div>
-        <div className='w-4/5 m-auto'>
-        <h2 className='pt-[90px] text-red-700 text-xl text-center'>Contact Us</h2>
-        <h1 className='text-4xl text-center pt-7'>Our Contact Details</h1>
-        <p className='text-center'>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, biny injected humour, or randomise</p>
+        <div className='w-4/5 m-auto py-28'>
+        <h2 className=' text-red-700 md:text-xl text-center'>Contact Us</h2>
+        <h1 className='md:text-4xl text-2xl text-center pt-3'>Our Contact Details</h1>
+        
 
         </div>
-        <div className='grid grid-cols-3 mt-16 '>
+        <div className='grid md:grid-cols-3 grid-cols-1 gap-10  '>
             <section className='flex flex-col text-center items-center px-10'>
                 
                 
@@ -33,7 +33,7 @@ export default function Contact() {
                     
 
 
-            <section className='flex flex-col items-center border-l border-gray-200 border-r px-10 '>
+            <section className='flex flex-col items-center border-l  border-gray-200 border-r px-10 '>
                 
                     
 
@@ -60,9 +60,9 @@ export default function Contact() {
         </div>
 
 
-        <div className='mt-[100px] w-[100%] m-auto'> 
-            <h2>Send Us A Message</h2>
-            <h1 className='text-4xl'>Get In Touch With Us</h1>
+        <div className='mt-[100px] w-[100%] m-auto py-11'> 
+            <h2 className='text-red-600'>Send Us A Message</h2>
+            <h1 className='md:text-4xl text-2xl p-3'>Get In Touch With Us</h1>
 
             <div className='mt-[30px] text-left w-4/5 m-auto'>
                 <form className='relative'>
@@ -72,7 +72,7 @@ export default function Contact() {
                     <input type="text" name='subject' placeholder='Subject' className='w-[47%] h-12 border border-gray-300 ml-[40px] rounded pl-5 text-xs absolute right-0'/><br />
                     <textarea maxLength='5000' name="description" placeholder='Your Message' className='w-[100%] mt-6 h-60 border border-gray-300 rounded pl-5 text-xs pt-4' ></textarea><br />
                     <div className='text-center'>
-                    <button className='bg-red-500 w-[40%] items-center text-center h-12 font-bold mt-3'>SEND MESSAGE</button>
+                    <button className='bg-red-500 md:w-[40%] p-3 items-center text-sm text-center h-12 font-bold mt-3'>SEND MESSAGE</button>
 
                     </div>
 

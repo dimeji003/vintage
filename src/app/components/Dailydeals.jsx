@@ -53,7 +53,7 @@ export default function Dailydeals() {
             </div>
             
         </div>
-        <div className='grid md:grid-cols-4 grid-cols-2 sm:grid-cols-2 gap-5 mt-9'>
+        <div className='grid lg:grid-cols-4 grid-cols-2 md:grid-cols-3 gap-11 mt-9 py-6'>
         {dailyCard}
             
         </div>

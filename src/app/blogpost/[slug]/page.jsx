@@ -24,13 +24,13 @@ export default function page(props) {
         </section>
     ))
   return (
-    <div className='w-[85%] m-auto pt-11'>
+    <div className='w-[85%] m-auto py-20'>
         <div className='flex flex-row gap-16 '>
             <div className='flex flex-col  md:w-[55%] w-[90%] m-auto '>
                 <div className='border-b border-gray-400 pb-11'>
                 <Image src={`/${blogInfo.image}.jpg`} alt={blogInfo.subject} width={600} height={300} className='w-[600px]'/>
                 <div className='flex flex-row justify-between mt-4 text-sm text-gray-500'><p><em>{blogInfo.userName}</em></p><p><em className='flex flex-row items-center gap-1'><IoCalendarOutline />{blogInfo.date}</em></p></div>
-                <h2 className='mt-3 text-4xl'>{blogInfo.subject}</h2>
+                <h2 className='mt-3 md:text-4xl text-2xl'>{blogInfo.subject}</h2>
                 <p className='mt-2 text-sm text-gray-600'>{blogInfo.note}</p>
             
 
