@@ -23,9 +23,9 @@ const teeGrp = tees.map(cloth => (
 export default function page() {
   return (
     
-    <div>
+    <div className='py-14'>
       <ProductNav2/>
-      <div className='grid md:grid-cols-3 grid-cols-2 gap-[50px] w-4/5 m-auto mt-11'>
+      <div className='grid md:grid-cols-3 grid-cols-2 gap-[50px] w-4/5 m-auto mt-11 py-6'>
       {teeGrp}
 
       </div>

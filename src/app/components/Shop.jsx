@@ -359,7 +359,7 @@ export default function Shop() {
 
     ))
   return (
-    <div className="relative min-h-screen top-14">
+    <div className="min-h-screen py-36">
     
     
         

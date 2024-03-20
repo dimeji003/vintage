@@ -51,7 +51,7 @@ export default function page(props) {
         
      
 
-        <div className='py-28 mt-24 bg-gray-200 lg:px-20 px-10'>
+        <div className='py-14 mt-24 bg-gray-200 lg:px-20 px-10'>
             <h2 className='text-2xl text-red-600'>Related Products</h2>
             <div className='grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-11 pt-5  '>
                 {relatedProducts}

@@ -41,7 +41,7 @@ export default function Dailydeals() {
     return () => document.removeEventListener('scroll', handleScroll)
   }, [])
   return (
-    <div className={`w-4/5 m-auto mt-28 ${styles.section} ${isVisible && styles.visible }`} id='animatedElement'>
+    <div className={`w-4/5 m-auto py-36 ${styles.section} ${isVisible && styles.visible }`} id='animatedElement'>
         <div className='flex flex-row w-[100%] justify-between'>
             <div className='md:text-4xl text-2xl '>Daily Deals</div>
             <div className='flex items-center'>
